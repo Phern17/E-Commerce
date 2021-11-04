@@ -1,0 +1,110 @@
+.footer {
+  padding-block: 2rem;
+  text-align: justify;
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+}
+
+.footer-icons {
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#footer-fb:hover {
+  color: transparent;
+  background: blue;
+  background-clip: text;
+}
+
+#footer-github:hover {
+  color: transparent;
+  background: black;
+  background-clip: text;
+}
+
+#footer-ig:hover {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.footer-links-container {
+  margin-inline: 2rem;
+}
+
+.footer > h4 {
+  font-weight: 600;
+}
+
+.footer-useful-links {
+  display: flex;
+  padding-top: 2.5rem;
+}
+
+.links-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.links-col > .link-item {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-contact {
+  margin-inline: 2rem;
+}
+
+.contact-info {
+  padding-top: 2.5rem;
+}
+
+.info-item {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.contact-info > img {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .row {
+    justify-content: center;
+  }
+
+  .footer-links-container {
+    margin-inline: 0;
+    margin-top: 4rem;
+  }
+
+  .footer-contact {
+    margin-inline: 0;
+    margin-top: 4rem;
+  }
+}

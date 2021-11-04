@@ -1,0 +1,22 @@
+.filter-container {
+    padding-block: 2rem;
+}
+
+.filter-container > h1 {
+    margin-bottom: 2rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-info-container > h4 {
+    display: inline;
+    margin-right: 15px;
+}
+
+select {
+    margin-left: 5px;
+    padding: 5px 10px;
+}

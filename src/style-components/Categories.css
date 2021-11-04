@@ -1,0 +1,36 @@
+.categories {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.category {
+  padding: 1px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.category:hover {
+  box-shadow: 0 0 57px rgb(33 33 33 / 50%);
+  background-color: black;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.category-image {
+  height: 500px;
+  object-fit: cover;
+}
+
+.category-title {
+  display: inline;
+}
+
+.category-button {
+  margin-left: 10px;
+  padding-inline: 10px;
+  margin-bottom: 25px;
+}

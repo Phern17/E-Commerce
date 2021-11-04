@@ -1,0 +1,21 @@
+.checkoutSummary {
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 0.5px solid grey;
+}
+
+.checkoutSummary > * {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.checkoutBtn {
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .checkoutSummary {
+        margin: 0;
+    }
+}

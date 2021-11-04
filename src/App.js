@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HomeScreen from "./Screens/HomeScreen";
+import LoginScreen from "./Screens/LoginScreen";
+import ProductDetailsScreen from "./Screens/ProductDetailsScreen";
+import ProductListScreen from "./Screens/ProductListScreen";
+import RegisterScreen from "./Screens/RegisterScreen";
+import ShopingCartScreen from "./Screens/ShopingCartScreen";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/product-list/product">
+          <ProductDetailsScreen />
+        </Route>
+        <Route path="/product-list">
+          <ProductListScreen />
+        </Route>
+        <Route path="/register">
+          <RegisterScreen />
+        </Route>
+        <Route path="/login">
+          <LoginScreen />
+        </Route>
+        <Route path="/checkout">
+          <ShopingCartScreen />
+        </Route>
+        <Route path="/">
+          <HomeScreen />
+        </Route>
+      </Switch>
     </div>
   );
 }

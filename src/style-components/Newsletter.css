@@ -1,0 +1,38 @@
+.newsletter {
+  padding-block: 5rem;
+  text-align: center;
+  background-image: linear-gradient(180deg, rgba(240,235,235,1) 0%, rgba(218,228,233,0.8248249983587185) 51%, rgba(137,143,147,1) 88%); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletter-title {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.newsletter-form {
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.newsletter-input {
+    padding-block: 10px;
+}
+
+.newsletter-button {
+    padding-block: 10px;
+    padding-inline: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    .newsletter-title {
+        font-size: 3rem;
+    }
+
+    .newsletter-form {
+        width: 75%;
+    }
+}
